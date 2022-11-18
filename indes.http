@@ -1,0 +1,36 @@
+POST http://localhost:3000/api/cursos/programacion
+Content-Type: application/json
+
+{
+    "id": 4,
+    "titulo": "aprende node.js",
+    "lenguaje": "js",
+    "vistas": 100,
+    "nivel": "basico"
+}
+
+###
+
+PUT http://localhost:3000/api/cursos/programacion/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 2,
+    "titulo": "Phyton proyectos",
+    "lenguaje": "Phyton",
+    "vistas": 10,
+    "nivel": "intermedio"
+}
+
+###
+
+PATCH http://localhost:3000/api/cursos/programacion/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "Phyton",
+    "vistas":20
+}
+
+###
+DELETE http://localhost:3000/api/cursos/programacion/1 HTTP/1.1
